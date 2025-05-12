@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Dulce Sabor</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Contacto</h1>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="tienda.html">Tienda</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="formulario">
+          <h2>¡Queremos saber de ti!</h2>
+          <form action="procesar_formulario.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre" />
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Ingresa tu email" />
+
+            <label for="tipo_pastel">Tipo de pastel:</label>
+            <select id="tipo_pastel" name="tipo_pastel" required>
+              <option value="">Selecciona un tipo</option>
+              <option value="chocolate">Pastel de Chocolate</option>
+              <option value="vainilla">Pastel de Vainilla</option>
+              <option value="fresas">Pastel de Fresas</option>
+              <option value="redvelvet">Pastel Red Velvet</option>
+              <option value="limon">Pastel de Limón</option>
+              <option value="zanahoria">Pastel de Zanahoria</option>
+            </select>
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí"></textarea>
+
+            <label for="aceptacion">
+              <input type="checkbox" id="aceptacion" name="aceptacion" required />
+              
+            </label>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>Visítanos y endulza tu día 🍰 © 2025 Dulce Sabor</p>
+      </footer>
+    </div>
+  </body>
+</html>
